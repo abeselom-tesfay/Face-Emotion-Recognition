@@ -1,10 +1,11 @@
 import streamlit as st
 import tensorflow as tf
-from tensorflow.keras import models
+from keras.models import load_model # type: ignore
 import numpy as np
 import os
 import cv2
-model = models.load_models('E:Projects\Python\Facial_Emotion_Recognition\models\Face_Emotion_Classification.keras')
+
+model = load_model(r'E:Projects\Python\Facial_Emotion_Recognition\models\Face_Emotion_Classification.keras')
 emotions = [['angry'],
  ['disgust'],
  ['fear'],
@@ -22,7 +23,7 @@ image = np.invert(np.array([image]))
 
 output = np.argmax(model.predict(image))
 outcome = emotions [output]
-stn = 'Emotion in the Image is '+ str(outcome)
+stn = 'Emotion in the Image is '+ str(outcome[0])
 st.markdown(stn)
 
 image_name = os.path.basename(image_path)

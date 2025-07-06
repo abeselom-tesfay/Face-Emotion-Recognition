@@ -5,7 +5,7 @@ import numpy as np
 import os
 import cv2
 
-model = load_model(r'E:Projects\Python\Facial_Emotion_Recognition\models\Face_Emotion_Classification.keras')
+model = load_model('E:/Projects/Python/Face-Emotion-Recognition/models/Face_Emotion_Classification.keras')
 emotions = [['angry'],
  ['disgust'],
  ['fear'],

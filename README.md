@@ -1,4 +1,4 @@
-# Face Emotion Recognition
+# Facial Expression Recognition using CNN
 
 This project implements a deep learning model to classify human facial expressions into distinct emotions such as Angry, Happy, Sad, and others using TensorFlow and Keras. It includes image preprocessing, model training, and a Streamlit-based web application for real-time prediction.
 
@@ -9,16 +9,6 @@ This project implements a deep learning model to classify human facial expressio
 * Live emotion prediction via uploaded image
 * Deployed using a user-friendly Streamlit interface
 * Modular and easy-to-extend codebase
-
-## 📁 Directory Structure
-
-* `Human_Emotion_Classification.ipynb` – Jupyter notebook containing the core model training and testing
-* `app.py` – Streamlit web app to perform real-time image-based emotion classification
-* `.gitignore` – Configuration to exclude datasets, virtual environments, and checkpoints
-* `requirements.txt` – Project dependencies
-* `README.md` – Project documentation
-* `Facial_Images/` – (ignored) Training dataset directory
-* `models/` – (ignored) Trained model files
 
 ## ✨ Getting Started
 
@@ -57,8 +47,3 @@ You can download it from [this Google Drive link](https://drive.google.com/file/
 * OpenCV (cv2)
 * Streamlit
 * Matplotlib
-
-## 👨‍💻 Author
-
-**Abeselom Tesfay Gebremariam**
-Aspiring MSc student in AI, Machine Learning, and Data Science

@@ -10,6 +10,19 @@ This project implements a deep learning model to classify human facial expressio
 * Deployed using a user-friendly Streamlit interface
 * Modular and easy-to-extend codebase
 
+## 🧠 Recognized Facial Expressions
+
+The following are predictions made by the trained CNN model on sample images:
+
+| Expression | Input Image | Predicted Emotion |
+|------------|-------------|-------------------|
+| Happy      | ![](recognized_expressions/happy.png) | 😄 Happy |
+| Sad        | ![](recognized_expressions/sad.png)   | 😢 Sad   |
+| Angry      | ![](recognized_expressions/angry.png) | 😠 Angry |
+
+> The model correctly classifies these facial expressions from real-world images.
+
+
 ## ✨ Getting Started
 
 1. Clone the repository:
@@ -47,3 +60,4 @@ You can download it from [this Google Drive link](https://drive.google.com/file/
 * OpenCV (cv2)
 * Streamlit
 * Matplotlib
+

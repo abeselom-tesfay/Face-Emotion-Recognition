@@ -10,41 +10,29 @@ This project implements a deep learning model to classify human facial expressio
 * Deployed using a user-friendly Streamlit interface
 * Modular and easy-to-extend codebase
 
-## 🧠 Recognized Facial Expressions
+### Predicted Facial Expressions
 
-The following are predictions made by the trained CNN model on sample images:
+#### Happy
+**Input Image:**  
+![](recognized_expressions/happy.jpg)  
+**Predicted Emotion:** 😄 Happy
 
-| Expression | Input Image | Predicted Emotion |
-|------------|-------------|-------------------|
-| Happy      | ![](recognized_expressions/happy.png) | 😄 Happy |
-| Sad        | ![](recognized_expressions/sad.png)   | 😢 Sad   |
-| Angry      | ![](recognized_expressions/angry.png) | 😠 Angry |
+#### Sad
+**Input Image:**  
+![](recognized_expressions/sad.jpg)  
+**Predicted Emotion:** 😢 Sad
+
+#### Angry
+**Input Image:**  
+![](recognized_expressions/angry.jpg)  
+**Predicted Emotion:** 😠 Angry
+
+
 
 > The model correctly classifies these facial expressions from real-world images.
 
 
-## ✨ Getting Started
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/abeselom-tesfay/Face-Emotion-Recognition.git
-   cd Face-Emotion-Recognition
-   ```
-
-2. Install dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Run the Streamlit app:
-
-   ```bash
-   streamlit run app.py
-   ```
-
-4. Upload an image and see the predicted emotion.
+> A Streamlit interface (`app.py`) is included to visually test the model with user-uploaded images.
 
 ## 📦 Dataset
 
@@ -52,12 +40,15 @@ The dataset used for training is not included in this repository due to size lim
 You can download it from [this Google Drive link](https://drive.google.com/file/d/14FJae0kO2hUztFr6BwjZCl2fqIMxNzJT/view) and place it in the `Facial_Images/` folder.
 
 
-## ✅ Requirements
+## Requirements
 
-* Python 3.7+
-* TensorFlow
-* NumPy
-* OpenCV (cv2)
-* Streamlit
-* Matplotlib
+- Python 3.7+
+- TensorFlow >= 2.6
+- NumPy >= 1.19
+- OpenCV (cv2) >= 4.5
+- Streamlit >= 1.0
+- Matplotlib >= 3.3
+- scikit-learn (for evaluation metrics)
+- seaborn (for visualization)
+
 

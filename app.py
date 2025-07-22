@@ -1,7 +1,7 @@
 import streamlit as st
 from streamlit_webrtc import webrtc_streamer, VideoTransformerBase
 import tensorflow as tf
-from tensorflow.keras.models import load_model
+load_model = tf.keras.models.load_model
 import numpy as np
 import cv2
 
